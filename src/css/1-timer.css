@@ -1,0 +1,252 @@
+#datetime-picker {
+  width: 272px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 118px 8px 16px;
+  margin-right: 4px;
+  border: 1px solid black;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+#datetime-picker:hover,
+#datetime-picker:focus {
+  border: 1px solid #000000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #4e75ff;
+}
+
+#datetime-picker:disabled {
+  color: #808080;
+  background-color: #fafafa;
+}
+
+#datetime-picker:disabled:hover,
+#datetime-picker:disabled:focus {
+  border: 1px solid #808080;
+}
+
+.timer {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+}
+button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  margin-left: 0px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #cfcfcf;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #989898;
+}
+
+button:hover,
+button:focus {
+  background-color: #6c8cff;
+}
+
+.value {
+  color: #2e2f42;
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 48px;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 120% */
+  letter-spacing: 1.6px;
+}
+.label {
+  width: 44px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button[data-start] {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  margin-left: 0px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button[data-start]:hover,
+button[data-start]:focus {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: none;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 346px;
+  height: 72px;
+}
+
+.timer:not(:first-child) {
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.value {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  width: 44px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+/* task 2 snackbar */
+
+/* .form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 35px;
+}
+
+.form input {
+  margin-top: 8px;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.form input {
+  border: 1px solid #808080;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form input:focus {
+  border: 1px solid #4e75ff;
+}
+
+.form input:hover {
+  border: 1px solid #000000;
+}
+
+fieldset {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+fieldset:focus,
+fieldset:hover {
+  border: 1px solid #000000;
+}
+
+fieldset legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+fieldset label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  margin-right: 48px;
+}
+
+fieldset label:not(:last-child) {
+  margin-left: 48px;
+}
+
+fieldset input {
+  height: auto;
+} */
